@@ -3,7 +3,7 @@ provider "azurerm" {
   features {}
 }
 
-variable "yourname" {
+variable "asif" {
   default     = "asif"
   description = "Change it to your first name and the first letter of your family name: ex. yanivc - for yaniv cohen"
 }
@@ -35,6 +35,6 @@ variable "vm_size" {
 
 # Resource Group
 resource "azurerm_resource_group" "rg" {
-  name     = "rg-${var.yourname}"
+  name     = "rg-${var.asif}"
   location = var.location
 }
